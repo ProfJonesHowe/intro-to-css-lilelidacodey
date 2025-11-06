@@ -1,7 +1,15 @@
+/* === TEST CSS: Hotpink background to confirm linking === */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: hotpink; /* Bright test color */
+    max-width: 72ch;
+    margin: 0 auto;
+    padding: 1rem;
+}
 
-body { background: hotpink; }
-
-
+/* Normalize box-sizing and remove default spacing */
 * {
     box-sizing: border-box;
 }
@@ -11,18 +19,7 @@ html, body {
     padding: 0;
 }
 
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #222;
-    background: hotpink;
-    max-width: 72ch;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-
+/* Mobile-first responsiveness */
 @media (min-width: 700px) {
     body {
         padding: 2rem;
@@ -32,17 +29,19 @@ body {
     }
 }
 
-
+/* Section spacing */
 header, main, footer, section, figure {
     margin-bottom: 1.5rem;
 }
 
+/* Navigation links styling */
 nav a {
     margin-right: 1rem;
     text-decoration: none;
     color: #222;
 }
 
+/* Button styling */
 button {
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
